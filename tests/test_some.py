@@ -1,13 +1,15 @@
 import requests
 
-from src.enums.globalenums.enums import GlobalErrorsMessages
-from configuration import SERVICE_URL
+from src.baseclasses.response import Response
 
-# SERVICE_URL = "https://my-json-server.typicode.com/typicode/demo/posts"
+from configuration import SERVICE_URL
+from src.schemas.posts import POST_SCHEMA
+
 
 def test_getting_posts():
-    response = requests.get(SERVICE_URL)
-    received_posts = response.json()
+    r = requests.get(SERVICE_URL)
+    response = Response(r)
 
-    assert response.status_code == 200, GlobalErrorsMessages.WRONG_STATUS_CODE.value
-    assert len(received_posts) == 3, GlobalErrorsMessages.WRONG_ELEMENTS_COUNT.value
+    response.assert_status_code(200)
+    response.validate_data(POST_SCHEMA)
+
