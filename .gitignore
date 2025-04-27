@@ -1,0 +1,75 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+pip-log.txt
+
+# === Virtual Environments ===
+venv/
+.venv/
+env/
+ENV/
+bin/
+include/
+lib/
+lib64/
+pyvenv.cfg
+pip-selfcheck.json
+
+# === pytest ===
+.pytest_cache/
+.coverage
+htmlcov/
+*.mo
+.pytest_cache/
+test-results/
+junit.xml
+coverage.xml
+
+# === IDE & Editor ===
+.vscode/
+.idea/
+*.swp
+*.sublime-*
+*.kate-swp
+*.komodoproject
+*.kdev4
+
+# === OS Generated ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Logs & Databases ===
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# === Secrets & Configs ===
+.env
+*.env
+secrets.ini
+config.ini
+credentials.json
+local_settings.py
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === Temporary Files ===
+tmp/
+temp/
+*.tmp
+*.bak
