@@ -1,5 +1,3 @@
-import requests
-
 from src.baseclasses.response import Response
 from src.paidentic_schema.users import User
 
