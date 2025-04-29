@@ -12,7 +12,10 @@ def test_another():
      (-22, 11, -2)
 ])
 def test_calculation(first_value, second_value, result):
-     assert first_value / second_value == result
+    """
+    Позитивная проверка деления двух чисел
+    """
+    assert first_value / second_value == result
 
 
 @pytest.mark.parametrize("first_value, second_value, error", [
@@ -20,5 +23,8 @@ def test_calculation(first_value, second_value, result):
     (21, '3', TypeError)
 ])
 def test_calculate_error(first_value, second_value, error):
+    """
+    Проверка возникновения ошибки при невалидных данных или делении на 0
+    """
     with pytest.raises(error):
         first_value / second_value

@@ -73,3 +73,5 @@ tmp/
 temp/
 *.tmp
 *.bak
+
+allureres/
