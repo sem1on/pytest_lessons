@@ -1,6 +1,6 @@
 from pydantic import BaseModel, field_validator
 
-from src.enums.user_enams.user_enam import Gender, Status
+from src.enums.user_enam import Gender, Status
 
 class User(BaseModel):
     id: int

@@ -1,6 +1,6 @@
 from jsonschema import validate
 
-from src.enums.globalenums.enums import GlobalErrorsMessages
+from src.enums.enums import GlobalErrorsMessages
 
 
 class Response:
@@ -33,3 +33,4 @@ class Response:
         else:
             assert self.response_status == status_code, GlobalErrorsMessages.WRONG_STATUS_CODE.value
         return self
+    
