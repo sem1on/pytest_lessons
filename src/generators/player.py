@@ -35,5 +35,5 @@ class Player:
         return self.result
     
 
-z = Player().build()
+z = Player().set_balanse(20).build()
 print(z)
