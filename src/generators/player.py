@@ -31,6 +31,11 @@ class Player:
             }    
         return self
 
+    def update_innet(self, key, value):
+        self.result[key] = value
+        return self
+
+
     def build(self):
         return self.result
     
